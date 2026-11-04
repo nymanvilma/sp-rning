@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<script>
+  // Google Consent Mode v2 – standard: neka allt utom nödvändigt (måste ligga före GTM)
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    analytics_storage: 'denied',
+    functionality_storage: 'granted',
+    security_storage: 'granted',
+    wait_for_update: 500
+  });
+  gtag('set', 'ads_data_redaction', true);
+  // Återkommande besökare: applicera sparat val innan GTM laddas
+  try {
+    var c = JSON.parse(localStorage.getItem('wp_cookie_consent'));
+    if (c) {
+      gtag('consent', 'update', {
+        analytics_storage: c.statistik ? 'granted' : 'denied',
+        ad_storage: c.marknadsforing ? 'granted' : 'denied',
+        ad_user_data: c.marknadsforing ? 'granted' : 'denied',
+        ad_personalization: c.marknadsforing ? 'granted' : 'denied'
+      });
+    }
+  } catch (e) {}
+</script>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-NL3G2ZLC"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kundomdömen | Waypoint Group</title>
+<meta name="description" content="Se vad våra kunder säger om sina resor och event med Waypoint.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Josefin+Sans:wght@300;400&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="page-kundomdomen">
+<header class="site-header" id="site-header">
+  <div class="container">
+    <a href="index.html" class="logo" id="header-logo" data-track="logo_click" aria-label="Waypoint Group – startsida"><span>WAYPOINT</span><small>GROUP</small></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Öppna meny" aria-expanded="false" aria-controls="main-nav" data-track="menu_toggle">☰</button>
+    <nav class="main-nav" id="main-nav" aria-label="Huvudmeny">
+      <ul><li><a id="nav-om-oss" data-track="nav_click" href="om-oss.html">Om oss</a></li><li class="has-sub"><a id="nav-tjanster" data-track="nav_click" href="index.html#tjanster">Våra tjänster ▾</a><ul class="sub-menu"><li><a id="nav-sub-teambuilding-resor" data-track="nav_click" href="teambuilding-resor.html">Teambuilding resor</a></li><li><a id="nav-sub-foretagsevent" data-track="nav_click" href="foretagsevent.html">Företagsevent</a></li><li><a id="nav-sub-foretagsresa-paket" data-track="nav_click" href="foretagsresa-paket.html">Boka företagsresa</a></li></ul></li><li><a id="nav-kundomdomen" data-track="nav_click" href="kundomdomen.html" aria-current="page">Kundomdömen</a></li><li><a id="nav-kontakta-oss" data-track="nav_click" href="kontakta-oss.html">Kontakta oss</a></li><li><a id="nav-eventguiden" data-track="nav_click" href="eventguiden.html">Eventguiden</a></li></ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="hero page-hero" id="reviews-hero" style="background-image:url('https://static.wixstatic.com/media/45fa29_5ecd9fed5c54487aa4505304c2a1e938~mv2.jpg')">
+  <div class="hero-inner"><h1>KUNDOMDÖMEN</h1></div>
+</section>
+<section class="section" id="reviews-list"><div class="container testimonials"><article class="testimonial" id="review-malta">
+  <img src="https://static.wixstatic.com/media/45fa29_5ecd9fed5c54487aa4505304c2a1e938~mv2.jpg" alt="Teambuildingresa – Malta" loading="lazy">
+  <div><h3>Teambuildingresa – Malta</h3><blockquote>“Upplägget var professionellt, tydligt och välorganiserat. All logistik fungerade smidigt, vilket underlättade fokuset på innehåll och deltagande. Vårt team har genom denna resa fått en förbättrad dynamik som vi alla är tacksamma för och stolta över.”</blockquote><cite>– Carina James, HR manager på Klarna</cite><time datetime="2024-05-07">7 maj 2024</time></div>
+</article><article class="testimonial" id="review-nice">
+  <img src="https://static.wixstatic.com/media/45fa29_433691954f6c4ac8b39b21604ac2097a~mv2.jpg" alt="Konferensresa – Nice" loading="lazy">
+  <div><h3>Konferensresa – Nice</h3><blockquote>“Waypoint tog ett helhetsansvar som sparade oss mycket tid. Planering, koordinering och höll hög kvalitet genom hela processen. Resan till Nice blev en höjdare, vi kommer absolut boka en till konferensresa med Waypoint i framtiden.”</blockquote><cite>– Björn Björkgård, projektledare hos McKinsey</cite><time datetime="2025-03-20">20 mars 2025</time></div>
+</article><article class="testimonial" id="review-barcelona">
+  <img src="https://static.wixstatic.com/media/11062b_a6c2b070d3ea4f4da545fe0fe091024a~mv2.jpg" alt="Företagsevent – Barcelona" loading="lazy">
+  <div><h3>Företagsevent – Barcelona</h3><blockquote>“Eventet skapade rätt förutsättningar för dialog och relationer i en miljö som speglar vårt varumärke. Helheten kändes genomarbetad och professionell, med god balans mellan affärsnytta och upplevelse. Responsen från våra kunder var mycket positiv.”</blockquote><cite>– Christopher Raid, Head of Marketing hos HubSpot</cite><time datetime="2021-08-31">31 augusti 2021</time></div>
+</article><article class="testimonial" id="review-spotify">
+  <img src="https://static.wixstatic.com/media/45fa29_149e9cb53b39412fa61df7057349c726~mv2.jpg" alt="Case – teambuilding" loading="lazy">
+  <div><h3>Case – teambuilding</h3><p>Spotify behövde samla sitt team för ett företagsevent med fokus på samarbete och engagemang.</p><p><strong>Lösning:</strong></p><ul><li>Tvådagars event med konferenslokaler och boende</li><li>Teambuilding-aktiviteter anpassade efter gruppen</li><li>Samordning av transporter och program</li></ul><p><strong>Resultat:</strong></p><ul><li>Stärkt samarbete och engagemang</li><li>Positiv feedback på både struktur och upplevelse</li></ul><blockquote>“Eventet skapade ett tydligt engagemang i gruppen. Kombinationen av möten och teambuilding fungerade väldigt bra för vårt team.”</blockquote><cite>– Klara Wilson, People &amp; Culture Manager hos Spotify</cite><time datetime="2023-07-07">7 juli 2023</time></div>
+</article></div></section>
+<section class="section section-alt" id="reviews-cta"><div class="container intro-box">
+  <h2>Vill ni också skapa en minnesvärd resa?</h2>
+  <a href="kontakta-oss.html#form-kontakt" class="btn" id="reviews-cta-kontakt" data-track="cta_click">KONTAKTA OSS</a>
+</div></section>
+</main>
+<footer class="site-footer" id="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Adress</h4><p>Sturegatan 12<br>114 36 Stockholm</p></div>
+      <div><h4>Telefonnummer</h4><p><a href="tel:+46855523450" id="footer-phone" data-track="phone_click">08-555 23 450</a></p></div>
+      <div><h4>Email</h4><p><a href="mailto:info@waypointgroup.com" id="footer-email" data-track="email_click">info@waypointgroup.com</a></p></div>
+      <div><h4>Följ oss</h4>
+        <div class="social">
+          <a href="https://www.tiktok.com/" id="footer-social-tiktok" data-track="social_click" aria-label="TikTok" target="_blank" rel="noopener"><img src="https://static.wixstatic.com/media/11062b_4b88b89fe4694d949be4919c81f194b4~mv2.png" alt=""></a>
+          <a href="https://www.linkedin.com/" id="footer-social-linkedin" data-track="social_click" aria-label="LinkedIn" target="_blank" rel="noopener"><img src="https://static.wixstatic.com/media/11062b_60c5fc4a3ecd49f2a697206b09eeace1~mv2.png" alt=""></a>
+          <a href="https://www.instagram.com/" id="footer-social-instagram" data-track="social_click" aria-label="Instagram" target="_blank" rel="noopener"><img src="https://static.wixstatic.com/media/11062b_6e9638ad803e4099a6116eb750b5a584~mv2.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Waypoint Group · <button type="button" class="link-btn" id="footer-cookie-settings">Cookie-inställningar</button></p>
+  </div>
+</footer>
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-modal="false" aria-labelledby="cookie-banner-title" hidden>
+  <div class="cookie-inner">
+    <h2 id="cookie-banner-title">Vi använder cookies</h2>
+    <p>Vi använder cookies för att få webbplatsen att fungera, för att analysera trafiken och för att anpassa marknadsföring. Du väljer själv vilka cookies du godkänner och kan ändra ditt val när som helst via ”Cookie-inställningar” längst ner på sidan.</p>
+    <div class="cookie-options" id="cookie-options" hidden>
+      <label class="cookie-option"><input type="checkbox" id="cookie-opt-nodvandiga" checked disabled><span><strong>Nödvändiga</strong> – krävs för att webbplatsen ska fungera.</span></label>
+      <label class="cookie-option"><input type="checkbox" id="cookie-opt-statistik" name="statistik"><span><strong>Statistik</strong> – hjälper oss förstå hur webbplatsen används (t.ex. Google Analytics).</span></label>
+      <label class="cookie-option"><input type="checkbox" id="cookie-opt-marknadsforing" name="marknadsforing"><span><strong>Marknadsföring</strong> – används för annonsering och mätning av kampanjer.</span></label>
+    </div>
+    <div class="cookie-actions">
+      <button type="button" class="btn" id="cookie-accept-all">Acceptera alla</button>
+      <button type="button" class="btn btn-outline" id="cookie-reject-all">Endast nödvändiga</button>
+      <button type="button" class="btn btn-outline" id="cookie-customize" aria-expanded="false" aria-controls="cookie-options">Anpassa</button>
+      <button type="button" class="btn" id="cookie-save" hidden>Spara val</button>
+    </div>
+  </div>
+</div>
+<script src="consent.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<script>
+  // Google Consent Mode v2 – standard: neka allt utom nödvändigt (måste ligga före GTM)
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    analytics_storage: 'denied',
+    functionality_storage: 'granted',
+    security_storage: 'granted',
+    wait_for_update: 500
+  });
+  gtag('set', 'ads_data_redaction', true);
+  // Återkommande besökare: applicera sparat val innan GTM laddas
+  try {
+    var c = JSON.parse(localStorage.getItem('wp_cookie_consent'));
+    if (c) {
+      gtag('consent', 'update', {
+        analytics_storage: c.statistik ? 'granted' : 'denied',
+        ad_storage: c.marknadsforing ? 'granted' : 'denied',
+        ad_user_data: c.marknadsforing ? 'granted' : 'denied',
+        ad_personalization: c.marknadsforing ? 'granted' : 'denied'
+      });
+    }
+  } catch (e) {}
+</script>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-NL3G2ZLC"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontakta oss | Waypoint Group</title>
+<meta name="description" content="Kontakta Waypoint Group – Sturegatan 12, Stockholm.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Josefin+Sans:wght@300;400&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="page-kontakta-oss">
+<header class="site-header" id="site-header">
+  <div class="container">
+    <a href="index.html" class="logo" id="header-logo" data-track="logo_click" aria-label="Waypoint Group – startsida"><span>WAYPOINT</span><small>GROUP</small></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Öppna meny" aria-expanded="false" aria-controls="main-nav" data-track="menu_toggle">☰</button>
+    <nav class="main-nav" id="main-nav" aria-label="Huvudmeny">
+      <ul><li><a id="nav-om-oss" data-track="nav_click" href="om-oss.html">Om oss</a></li><li class="has-sub"><a id="nav-tjanster" data-track="nav_click" href="index.html#tjanster">Våra tjänster ▾</a><ul class="sub-menu"><li><a id="nav-sub-teambuilding-resor" data-track="nav_click" href="teambuilding-resor.html">Teambuilding resor</a></li><li><a id="nav-sub-foretagsevent" data-track="nav_click" href="foretagsevent.html">Företagsevent</a></li><li><a id="nav-sub-foretagsresa-paket" data-track="nav_click" href="foretagsresa-paket.html">Boka företagsresa</a></li></ul></li><li><a id="nav-kundomdomen" data-track="nav_click" href="kundomdomen.html">Kundomdömen</a></li><li><a id="nav-kontakta-oss" data-track="nav_click" href="kontakta-oss.html" aria-current="page">Kontakta oss</a></li><li><a id="nav-eventguiden" data-track="nav_click" href="eventguiden.html">Eventguiden</a></li></ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="hero page-hero" id="contact-hero" style="background-image:url('https://static.wixstatic.com/media/45fa29_471f48ac60b144048b42624c57cd417c~mv2.jpg')">
+  <div class="hero-inner"><h1>KONTAKTA OSS</h1></div>
+</section>
+<section class="section" id="contact-section"><div class="container contact-grid">
+  <div class="contact-info" id="contact-info">
+    <h3>Adress</h3><p>Sturegatan 12<br>114 36 Stockholm</p>
+    <h3>Telefon</h3><p><a href="tel:+46855523450" id="contact-phone" data-track="phone_click">08-555 23 450</a></p>
+    <h3>Email</h3><p><a href="mailto:info@waypointgroup.com" id="contact-email" data-track="email_click">info@waypointgroup.com</a></p>
+    <h3>Öppetider</h3><p>Mån–Fre 09:00–16:00<br>Lördag 10:00–15:00<br>Söndag Stängt</p>
+  </div>
+  <form class="form" id="form-kontakt" data-track-form="form-kontakt" novalidate>
+    <div><label for="form-kontakt-namn">Namn*</label><input id="form-kontakt-namn" name="namn" required autocomplete="name"></div>
+    <div><label for="form-kontakt-foretag">Företag</label><input id="form-kontakt-foretag" name="foretag" autocomplete="organization"></div>
+    <div><label for="form-kontakt-email">Email*</label><input id="form-kontakt-email" name="email" type="email" required autocomplete="email"></div>
+    <div><label for="form-kontakt-telefon">Telefon</label><input id="form-kontakt-telefon" name="telefon" type="tel" autocomplete="tel"></div>
+    <div class="full"><label for="form-kontakt-tjanst">Tjänst</label><select id="form-kontakt-tjanst" name="tjanst"><option>Teambuilding resor</option><option>Företagsevent</option><option>Boka företagsresa</option><option selected>Annat</option></select></div>
+    <div class="full"><label for="form-kontakt-meddelande">Meddelande*</label><textarea id="form-kontakt-meddelande" name="meddelande" required></textarea></div>
+    <div class="full"><button type="submit" class="btn" id="form-kontakt-submit">Skicka</button></div>
+    <p class="form-msg" id="form-kontakt-success" role="status">Tack för ditt meddelande! Vi hör av oss så snart vi kan.</p>
+  </form>
+</div></section>
+</main>
+<footer class="site-footer" id="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Adress</h4><p>Sturegatan 12<br>114 36 Stockholm</p></div>
+      <div><h4>Telefonnummer</h4><p><a href="tel:+46855523450" id="footer-phone" data-track="phone_click">08-555 23 450</a></p></div>
+      <div><h4>Email</h4><p><a href="mailto:info@waypointgroup.com" id="footer-email" data-track="email_click">info@waypointgroup.com</a></p></div>
+      <div><h4>Följ oss</h4>
+        <div class="social">
+          <a href="https://www.tiktok.com/" id="footer-social-tiktok" data-track="social_click" aria-label="TikTok" target="_blank" rel="noopener"><img src="https://static.wixstatic.com/media/11062b_4b88b89fe4694d949be4919c81f194b4~mv2.png" alt=""></a>
+          <a href="https://www.linkedin.com/" id="footer-social-linkedin" data-track="social_click" aria-label="LinkedIn" target="_blank" rel="noopener"><img src="https://static.wixstatic.com/media/11062b_60c5fc4a3ecd49f2a697206b09eeace1~mv2.png" alt=""></a>
+          <a href="https://www.instagram.com/" id="footer-social-instagram" data-track="social_click" aria-label="Instagram" target="_blank" rel="noopener"><img src="https://static.wixstatic.com/media/11062b_6e9638ad803e4099a6116eb750b5a584~mv2.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Waypoint Group · <button type="button" class="link-btn" id="footer-cookie-settings">Cookie-inställningar</button></p>
+  </div>
+</footer>
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-modal="false" aria-labelledby="cookie-banner-title" hidden>
+  <div class="cookie-inner">
+    <h2 id="cookie-banner-title">Vi använder cookies</h2>
+    <p>Vi använder cookies för att få webbplatsen att fungera, för att analysera trafiken och för att anpassa marknadsföring. Du väljer själv vilka cookies du godkänner och kan ändra ditt val när som helst via ”Cookie-inställningar” längst ner på sidan.</p>
+    <div class="cookie-options" id="cookie-options" hidden>
+      <label class="cookie-option"><input type="checkbox" id="cookie-opt-nodvandiga" checked disabled><span><strong>Nödvändiga</strong> – krävs för att webbplatsen ska fungera.</span></label>
+      <label class="cookie-option"><input type="checkbox" id="cookie-opt-statistik" name="statistik"><span><strong>Statistik</strong> – hjälper oss förstå hur webbplatsen används (t.ex. Google Analytics).</span></label>
+      <label class="cookie-option"><input type="checkbox" id="cookie-opt-marknadsforing" name="marknadsforing"><span><strong>Marknadsföring</strong> – används för annonsering och mätning av kampanjer.</span></label>
+    </div>
+    <div class="cookie-actions">
+      <button type="button" class="btn" id="cookie-accept-all">Acceptera alla</button>
+      <button type="button" class="btn btn-outline" id="cookie-reject-all">Endast nödvändiga</button>
+      <button type="button" class="btn btn-outline" id="cookie-customize" aria-expanded="false" aria-controls="cookie-options">Anpassa</button>
+      <button type="button" class="btn" id="cookie-save" hidden>Spara val</button>
+    </div>
+  </div>
+</div>
+<script src="consent.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

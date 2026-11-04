@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<script>
+  // Google Consent Mode v2 – standard: neka allt utom nödvändigt (måste ligga före GTM)
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {
+    ad_storage: 'denied',
+    ad_user_data: 'denied',
+    ad_personalization: 'denied',
+    analytics_storage: 'denied',
+    functionality_storage: 'granted',
+    security_storage: 'granted',
+    wait_for_update: 500
+  });
+  gtag('set', 'ads_data_redaction', true);
+  // Återkommande besökare: applicera sparat val innan GTM laddas
+  try {
+    var c = JSON.parse(localStorage.getItem('wp_cookie_consent'));
+    if (c) {
+      gtag('consent', 'update', {
+        analytics_storage: c.statistik ? 'granted' : 'denied',
+        ad_storage: c.marknadsforing ? 'granted' : 'denied',
+        ad_user_data: c.marknadsforing ? 'granted' : 'denied',
+        ad_personalization: c.marknadsforing ? 'granted' : 'denied'
+      });
+    }
+  } catch (e) {}
+</script>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-NL3G2ZLC"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Waypoint Group – Företagsresor, teambuilding & företagsevent</title>
+<meta name="description" content="Minnesvärda resor och event för företag och organisationer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Josefin+Sans:wght@300;400&family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="page-home">
+<header class="site-header" id="site-header">
+  <div class="container">
+    <a href="index.html" class="logo" id="header-logo" data-track="logo_click" aria-label="Waypoint Group – startsida"><span>WAYPOINT</span><small>GROUP</small></a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Öppna meny" aria-expanded="false" aria-controls="main-nav" data-track="menu_toggle">☰</button>
+    <nav class="main-nav" id="main-nav" aria-label="Huvudmeny">
+      <ul><li><a id="nav-om-oss" data-track="nav_click" href="om-oss.html">Om oss</a></li><li class="has-sub"><a id="nav-tjanster" data-track="nav_click" href="index.html#tjanster">Våra tjänster ▾</a><ul class="sub-menu"><li><a id="nav-sub-teambuilding-resor" data-track="nav_click" href="teambuilding-resor.html">Teambuilding resor</a></li><li><a id="nav-sub-foretagsevent" data-track="nav_click" href="foretagsevent.html">Företagsevent</a></li><li><a id="nav-sub-foretagsresa-paket" data-track="nav_click" href="foretagsresa-paket.html">Boka företagsresa</a></li></ul></li><li><a id="nav-kundomdomen" data-track="nav_click" href="kundomdomen.html">Kundomdömen</a></li><li><a id="nav-kontakta-oss" data-track="nav_click" href="kontakta-oss.html">Kontakta oss</a></li><li><a id="nav-eventguiden" data-track="nav_click" href="eventguiden.html">Eventguiden</a></li></ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="hero" id="home-hero" style="background-image:url('https://static.wixstatic.com/media/947784_0fbb15b27e7549f8b9daa9358cc08827f000.jpg')">
+  <div class="hero-inner"><h1>WAYPOINT GROUP</h1><p>Minnesvärda resor och event för företag och organisationer</p><a href="teambuilding-resor.html#form-boka-mote-teambuilding" class="btn btn-light" id="hero-cta-boka-mote" data-track="cta_click">BOKA MÖTE</a></div>
+</section>
+<section class="section" id="home-intro"><div class="container intro-grid">
+  <div class="intro-box"><h2>OM OSS</h2><p>Lär känna teamet bakom Waypoint och hur vi hjälper företag att genomföra företagsresor, teambuilding-resor och företagsevent.</p>
+    <a href="om-oss.html" class="btn btn-outline" id="home-about-readmore" data-track="read_more_click">LÄS MER</a></div>
+  <div class="intro-box"><h2>KUNDOMDÖME</h2><p>Se vad våra kunder säger om sina företagsresor, teambuilding-resor och företagsevent tillsammans med Waypoint.</p>
+    <a href="kundomdomen.html" class="btn btn-outline" id="home-reviews-readmore" data-track="read_more_click">LÄS MER</a></div>
+</div></section>
+<section class="section section-alt" id="tjanster"><div class="container">
+  <h2 class="section-title">VÅRA TJÄNSTER</h2>
+  <div class="cards"><article class="card" id="service-card-foretagsresa-paket">
+  <img src="https://static.wixstatic.com/media/11062b_e4f6a0714556404bb223a6a25487dbd6~mv2.jpg" alt="Boka företagsresa – helhetslösning för företag" loading="lazy">
+  <div class="card-body"><h3>BOKA FÖRETAGSRESA</h3><p>Vi skapar skräddarsydda paketresor för ditt företag där transport, boende och aktiviteter ingår i en smart helhetslösning.</p>
+  <a href="foretagsresa-paket.html" class="btn btn-outline" id="home-service-foretagsresa-paket-readmore" data-track="read_more_click">LÄS MER</a></div>
+</article><article class="card" id="service-card-teambuilding-resor">
+  <img src="https://static.wixstatic.com/media/d3bb8c4ffafc44798f1e435f93c04d59.jpg" alt="Teambuilding resor med gemensamma aktiviteter för team" loading="lazy">
+  <div class="card-body"><h3>TEAMBUILDING RESOR</h3><p>Vi arrangerar teambuilding-resor som stärker samarbete och företagskultur genom upplevelser anpassade efter teamets mål och dynamik.</p>
+  <a href="teambuilding-resor.html" class="btn btn-outline" id="home-service-teambuilding-resor-readmore" data-track="read_more_click">LÄS MER</a></div>
+</article><article class="card" id="service-card-foretagsevent">
+  <img src="https://static.wixstatic.com/media/45fa29_ca33159303c547b594d750e3f10f5cf7~mv2.jpg" alt="Företagsevent som stärker relationer och gemenskap" loading="lazy">
+  <div class="card-body"><h3>FÖRETAGSEVENT</h3><p>Vi anordnar upplevelsebaserade företagsevent utomlands som skapar starka relationer, stärker varumärket och skapar affärsmöjligheter.</p>
+  <a href="foretagsevent.html" class="btn btn-outline" id="home-service-foretagsevent-readmore" data-track="read_more_click">LÄS MER</a></div>
+</article></div>
+</div></section>
+<section class="section" id="home-partners"><div class="container">
+  <h2 class="section-title">VÅRA SAMARBETSPARTNERS</h2>
+  <div class="partners"><img src="https://static.wixstatic.com/media/947784_d913030e191a42b2bb224093eb67b33f~mv2.png" alt="Partner" loading="lazy"><img src="https://static.wixstatic.com/media/947784_35082a4b0b5a4fa1bbbb83b993cdd329~mv2.png" alt="Radisson Blu" loading="lazy"><img src="https://static.wixstatic.com/media/947784_cd5ce32ba4ae4e2390abddc190be7aaf~mv2.png" alt="SAS" loading="lazy"><img src="https://static.wixstatic.com/media/947784_fbe005a6b6e64e63835b62144068058d~mv2.jpg" alt="Partner" loading="lazy"><img src="https://static.wixstatic.com/media/947784_0268b49f0793471ca96c089301fefd53~mv2.png" alt="Happy Spider" loading="lazy"></div>
+</div></section>
+<section class="section section-alt" id="home-trips"><div class="container">
+  <h2 class="section-title">TIDIGARE RESOR &amp; EVENT</h2>
+  <div class="gallery"><figure id="trip-1"><img src="https://static.wixstatic.com/media/9a50f70f56a84d8fa55f04337f3b2363.jpg" alt="Skidåkare på berget" loading="lazy"><figcaption>WAYPOINT X STADIUM</figcaption></figure><figure id="trip-2"><img src="https://static.wixstatic.com/media/45fa29_5ecd9fed5c54487aa4505304c2a1e938~mv2.jpg" alt="Teambuildingresa Malta" loading="lazy"><figcaption>MALTA</figcaption></figure><figure id="trip-3"><img src="https://static.wixstatic.com/media/45fa29_433691954f6c4ac8b39b21604ac2097a~mv2.jpg" alt="Konferensresa Nice" loading="lazy"><figcaption>NICE</figcaption></figure></div>
+</div></section>
+</main>
+<footer class="site-footer" id="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Adress</h4><p>Sturegatan 12<br>114 36 Stockholm</p></div>
+      <div><h4>Telefonnummer</h4><p><a href="tel:+46855523450" id="footer-phone" data-track="phone_click">08-555 23 450</a></p></div>
+      <div><h4>Email</h4><p><a href="mailto:info@waypointgroup.com" id="footer-email" data-track="email_click">info@waypointgroup.com</a></p></div>
+      <div><h4>Följ oss</h4>
+        <div class="social">
+          <a href="https://www.tiktok.com/" id="footer-social-tiktok" data-track="social_click" aria-label="TikTok" target="_blank" rel="noopener"><img src="https://static.wixstatic.com/media/11062b_4b88b89fe4694d949be4919c81f194b4~mv2.png" alt=""></a>
+          <a href="https://www.linkedin.com/" id="footer-social-linkedin" data-track="social_click" aria-label="LinkedIn" target="_blank" rel="noopener"><img src="https://static.wixstatic.com/media/11062b_60c5fc4a3ecd49f2a697206b09eeace1~mv2.png" alt=""></a>
+          <a href="https://www.instagram.com/" id="footer-social-instagram" data-track="social_click" aria-label="Instagram" target="_blank" rel="noopener"><img src="https://static.wixstatic.com/media/11062b_6e9638ad803e4099a6116eb750b5a584~mv2.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Waypoint Group · <button type="button" class="link-btn" id="footer-cookie-settings">Cookie-inställningar</button></p>
+  </div>
+</footer>
+<div class="cookie-banner" id="cookie-banner" role="dialog" aria-modal="false" aria-labelledby="cookie-banner-title" hidden>
+  <div class="cookie-inner">
+    <h2 id="cookie-banner-title">Vi använder cookies</h2>
+    <p>Vi använder cookies för att få webbplatsen att fungera, för att analysera trafiken och för att anpassa marknadsföring. Du väljer själv vilka cookies du godkänner och kan ändra ditt val när som helst via ”Cookie-inställningar” längst ner på sidan.</p>
+    <div class="cookie-options" id="cookie-options" hidden>
+      <label class="cookie-option"><input type="checkbox" id="cookie-opt-nodvandiga" checked disabled><span><strong>Nödvändiga</strong> – krävs för att webbplatsen ska fungera.</span></label>
+      <label class="cookie-option"><input type="checkbox" id="cookie-opt-statistik" name="statistik"><span><strong>Statistik</strong> – hjälper oss förstå hur webbplatsen används (t.ex. Google Analytics).</span></label>
+      <label class="cookie-option"><input type="checkbox" id="cookie-opt-marknadsforing" name="marknadsforing"><span><strong>Marknadsföring</strong> – används för annonsering och mätning av kampanjer.</span></label>
+    </div>
+    <div class="cookie-actions">
+      <button type="button" class="btn" id="cookie-accept-all">Acceptera alla</button>
+      <button type="button" class="btn btn-outline" id="cookie-reject-all">Endast nödvändiga</button>
+      <button type="button" class="btn btn-outline" id="cookie-customize" aria-expanded="false" aria-controls="cookie-options">Anpassa</button>
+      <button type="button" class="btn" id="cookie-save" hidden>Spara val</button>
+    </div>
+  </div>
+</div>
+<script src="consent.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
